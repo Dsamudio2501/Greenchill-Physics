@@ -1,0 +1,132 @@
+:root {
+  --bg: #f8fff2;
+  --surface: #ffffff;
+  --text: #173122;
+  --muted: #40614f;
+  --primary: #14a44d;
+  --primary-dark: #0f7f3b;
+  --accent: #ffd93b;
+  --accent-strong: #ffca0a;
+  --border: #d9f2dd;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.55;
+}
+
+.hero {
+  background: linear-gradient(140deg, #e5ffe1, #fff7cc);
+  border-bottom: 1px solid var(--border);
+}
+
+.nav {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  margin: 0;
+  font-size: 1.1rem;
+  color: var(--primary-dark);
+}
+
+.btn {
+  text-decoration: none;
+  background: var(--accent);
+  color: #1e2a20;
+  padding: 0.55rem 0.9rem;
+  border-radius: 10px;
+  font-weight: 700;
+  border: 1px solid #e8bc00;
+}
+
+.btn:hover {
+  background: var(--accent-strong);
+}
+
+.hero-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2.5rem 1rem 3rem;
+}
+
+.hero-content h2 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.9rem;
+  font-size: clamp(1.5rem, 2.4vw, 2.1rem);
+  color: #13683a;
+}
+
+.pill {
+  display: inline-block;
+  margin: 0;
+  background: var(--primary);
+  color: #ffffff;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 0.2rem 0.7rem;
+  font-size: 0.9rem;
+}
+
+.section {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.section h3 {
+  margin-top: 0;
+  color: #0f7f3b;
+}
+
+.alt {
+  background: #fffce8;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  background: var(--surface);
+  border: 1px solid #c8ebcf;
+  border-top: 5px solid var(--primary);
+  border-radius: 12px;
+  padding: 1rem;
+}
+
+.card h4 {
+  margin-top: 0;
+  margin-bottom: 0.45rem;
+  color: #13683a;
+}
+
+.card:nth-child(2) {
+  border-top-color: var(--accent-strong);
+}
+
+.card:nth-child(3) {
+  border-top-color: #22c55e;
+}
+
+.footer {
+  text-align: center;
+  padding: 1.5rem 1rem 2rem;
+  color: var(--muted);
+}
